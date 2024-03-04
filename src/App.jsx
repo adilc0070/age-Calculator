@@ -21,11 +21,9 @@ function App() {
           onChange={(e) => setDate(e.target.value)}
           className="w-full p-3 border-4 border-gray-300 rounded-3xl focus:outline-dotted focus:border-gray-500"
         />
-        {calculateAge() > 18 ? (<div className="mt-6 text-2xl text-red-800 font-bold text-center">
+        <div className="mt-6 text-2xl text-red-800 font-bold text-center">
           <h2>{calculateAge()}</h2>
-        </div>) : (<div className="mt-6 text-2xl text-green-800 font-bold text-center">
-          <h2>{calculateAge()}</h2>
-        </div>)}
+        </div>
       </div>
     </div>
   );
